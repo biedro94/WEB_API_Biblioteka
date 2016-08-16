@@ -5,7 +5,6 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Resolver;
-using Service.Services.Interface;
 
 namespace Biblioteka.Controllers
 {

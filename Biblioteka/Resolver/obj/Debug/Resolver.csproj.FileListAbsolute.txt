@@ -1,0 +1,13 @@
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\obj\Debug\Resolver.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Resolver.dll
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Resolver.pdb
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Repositories.dll
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Services.dll
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Models.dll
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Dapper.dll
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Repositories.pdb
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Services.pdb
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Models.pdb
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\bin\Debug\Dapper.xml
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\obj\Debug\Resolver.dll
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Resolver\obj\Debug\Resolver.pdb
