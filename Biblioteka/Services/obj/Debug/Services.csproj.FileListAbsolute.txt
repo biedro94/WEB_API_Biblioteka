@@ -20,3 +20,14 @@ C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Bibliote
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Biblioteka-Bogdan\Biblioteka\Services\bin\Debug\Models.pdb
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Biblioteka-Bogdan\Biblioteka\Services\bin\Debug\Repositories.pdb
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Biblioteka-Bogdan\Biblioteka\Services\bin\Debug\Dapper.xml
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\bin\Debug\Services.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\bin\Debug\Services.pdb
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\bin\Debug\Models.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\bin\Debug\Repositories.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\bin\Debug\Dapper.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\bin\Debug\Models.pdb
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\bin\Debug\Repositories.pdb
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\bin\Debug\Dapper.xml
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\obj\Debug\Services.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Services\obj\Debug\Services.pdb

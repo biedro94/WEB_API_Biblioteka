@@ -1,6 +1,6 @@
-﻿<script src="~/Scripts/jquery-1.10.2.js"></script>
-<script src="~/Scripts/knockout-3.4.0.js"></script>
-<script src="~/KnockoutViewModels/BibliotekaHomeViewModel.js"></script>
+﻿<script src="../../Scripts/jquery-1.10.2.js"></script>
+<script src="../../Scripts/knockout-3.4.0.js"></script>
+<script src="../../KnockoutViewModels/BibliotekaHomeViewModel.js"></script>
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -9,11 +9,9 @@
 </div>
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-        is an ideal platform for building RESTful applications on the .NET Framework.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+        <div data-bind="foreach: users">
+            <h3 data-bind="text: $data"></h3>
+        </div>
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
@@ -26,19 +24,6 @@
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
     </div>
 </div>
-<div class="panel-body" data-bind="with: bibliotekaHomeViewModel">
-    <div data-bind="foreach: categories">
-        <p data-bind="text: CategoryName"></p>
-        Today's message is: <span data-bind="text: myMessage"></span>
-    </div>
 
-</div>
-<script type="text/javascript">
-    var viewModel = {
-        myMessage: ko.observable() // Initially blank
-    };
-    viewModel.myMessage("Hello, world!"); // Text appears
-</script>
-Today's message is: <span data-bind="text: myMessage"></span>
 
 
