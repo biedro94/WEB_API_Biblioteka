@@ -1,0 +1,3 @@
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Services\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Services\obj\Debug\Services.dll
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Services\obj\Debug\Services.pdb

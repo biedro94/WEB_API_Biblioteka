@@ -4,7 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Services;
+using Resolver;
+using Service.Services.Interface;
 
 namespace Biblioteka.Controllers
 {
@@ -13,7 +14,7 @@ namespace Biblioteka.Controllers
         // GET: api/BibliotekaHome
         public IEnumerable<string> Get()
         {
-            return DataServices.GetListOfCategoriesServices();
+            return DataServiceResolver.Get().GetListOfCategoriesServices();
         }
 
         // GET: api/BibliotekaHome/5

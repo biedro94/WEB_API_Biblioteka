@@ -55,9 +55,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Services\Services.csproj">
+    <ProjectReference Include="..\Services\Service.csproj">
       <Project>{9230FA08-BB47-4776-B6BF-BF3ECC61DB1C}</Project>
-      <Name>Services</Name>
+      <Name>Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

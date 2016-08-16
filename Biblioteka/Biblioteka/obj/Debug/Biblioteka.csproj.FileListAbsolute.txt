@@ -96,3 +96,6 @@ C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Bibliote
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Biblioteka-Bogdan\Biblioteka\Biblioteka\bin\Dapper.xml
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Biblioteka-Bogdan\Biblioteka\Biblioteka\obj\Debug\Biblioteka.dll
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Biblioteka-Bogdan\Biblioteka\Biblioteka\obj\Debug\Biblioteka.pdb
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Biblioteka\obj\Debug\Biblioteka.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Biblioteka\obj\Debug\Biblioteka.dll
+C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Biblioteka\obj\Debug\Biblioteka.pdb
