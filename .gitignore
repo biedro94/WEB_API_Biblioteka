@@ -1,4 +1,14 @@
 *.cache
 *.cache
-Biblioteka/Biblioteka/obj/Debug/Biblioteka.csprojResolveAssemblyReference.cache
 *.cache
+Biblioteka/Biblioteka/obj/**
+Biblioteka/Biblioteka/bin/**
+Biblioteka/Models/obj/**
+Biblioteka/Models/bin/**
+Biblioteka/Repositories/obj/**
+Biblioteka/Repositories/bin/**
+Biblioteka/Resolver/obj/**
+Biblioteka/Resolver/bin/**
+Biblioteka/Services/obj/**
+Biblioteka/Services/bin/**
+Biblioteka/Resolver/obj/Debug/Resolver.dll
