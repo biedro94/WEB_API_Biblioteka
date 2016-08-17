@@ -5,35 +5,41 @@
 
 <div class="row">
     <div class="col-md-3">
+        <h2 class="kategoria">Kategorie</h2>
         <div data-bind="foreach: category">
             <p><a href="#" class="opcja" data-bind="text: $data, click: function() {$root.Save($data)}"></a></p>
         </div>
 
     </div>
+    <div class="col-md-3">
+        dssdhgsdg
+    </div>
+    <div class="col-md-3 form-group">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Wprowadz frazę">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Szukaj</button>
+            </span>
+        </div>
+    </div>
    
-    <div class="col-md-9">
-         
-        <h2>Pozycje w kategorii:</h2>
+    <div class="col-md-9 col-md-offset-3">       
+        
         <div class="table-responsive">
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>#</th>
                         <th>Tytuł</th>
                         <th>Autor</th>
-                        <th>Opis</th>
-                        <th>Język</th>
                         <th>Wydawca</th>
                         <th>Rok wydania</th>
+                        <th>Dostępność</th>
                     </tr>
                 </thead>
                 <tbody data-bind="foreach: pozycje">
                     <tr>
-                        <td data-bind="text: IdPoz"></td>
                         <td data-bind="text: Tytul"></td>
                         <td data-bind="text: Autor"></td>
-                        <td data-bind="text: Opis"></td>
-                        <td data-bind="text: Jezyk"></td>
                         <td data-bind="text: Wydawca"></td>
                         <td data-bind="text: RokWydania"></td>
                     </tr>

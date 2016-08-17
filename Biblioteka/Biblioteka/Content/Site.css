@@ -1,6 +1,10 @@
-﻿body {
+﻿@import 'https://fonts.googleapis.com/css?family=Lemon';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background:url("http://api.thumbr.it/whitenoise-361x370.png?background=dbdbdbff&noise=050505&density=68&opacity=8 ");
+    font-family= 'Open sans';
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -14,4 +18,27 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.logo{
+    font-size:5.5em;
+    font-family: 'Lemon', cursive;
+}
+
+.pad{
+    margin-bottom:10%;
+}
+
+table thead tr th {
+    font-size:1em;
+    font-weight:none;
+}
+table {
+    border:2px solid #2c3235;
+    border-radius:5px
+
+}
+
+.kategoria {
+    margin-top:0px;
 }

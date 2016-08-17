@@ -15,7 +15,6 @@ function CategoryNamesViewModel() {
         var a = data.map(x => new Pozycja(x))
         self.pozycje(a);
     */
-
     self.Save = (text) => {
         var obj = { value: text }
         var url = "api/category/" + text + "/get";
