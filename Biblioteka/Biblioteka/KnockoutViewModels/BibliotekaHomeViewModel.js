@@ -10,17 +10,17 @@ function CategoryNamesViewModel() {
     self.pozycje = ko.observableArray();
     
     $.getJSON(baseUri, self.category);
-
-    self.SendCategoryName = function () {
-        var data = JSON.stringify(
-            {
-                first: self.category
-            });
-        $.post("api/BibliotekaHome", data);
-    };
-
-
-
+    
+    self.Save = function (){        
+        document.getElementById("butt").addEventListener('click', fn);
+        function fn() {
+            var jsonData = ko.toJSON(this.innerHTML);
+            $.post(baseUri, { value: jsonData }, function () { alert("UDALO SIE"); });
+            //alert(this.innerHTML);
+        }
+        
+    }
+    
     function Pozycja(idPoz, tytul, autor, opis, jezyk, wydawca, rokWydania, idKat) {
         var self = this;
 
@@ -35,17 +35,12 @@ function CategoryNamesViewModel() {
         self.IdKat = ko.observable(idKat);
 
     };
-
-
     $.getJSON(getPozycjeUri, function (data) {
         $.each(data, function (key, value) {
             self.pozycje.push(new Pozycja(value.Id_poz, value.Tytul, value.Autor, value.Opis, value.Jezyk, value.Wydawca, value.Rok_wydania, value.Id_kategorii));
         });
     });
-
-
-
-    }
+}
 
    
 
