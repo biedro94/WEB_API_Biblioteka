@@ -1,11 +1,15 @@
 ﻿$(document).ready(function () {
-    ko.applyBindings(new UsersViewModel());
+    ko.applyBindings(new CategoryNamesViewModel());
 });
 
-function UsersViewModel() {
+function CategoryNamesViewModel() {
 
     var self = this;
     var baseUri = "http://localhost:53566/api/BibliotekaHome";
-    self.users = ko.observableArray();
-    $.getJSON(baseUri, self.users);
+    self.category = ko.observableArray();
+    $.getJSON(baseUri, self.category);
 }
+
+/*var PositionsForCategoriesViewModel = function () {
+    this.
+}*/

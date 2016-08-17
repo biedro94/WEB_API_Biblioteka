@@ -199,3 +199,5 @@ C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Biblio
 C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Biblioteka\bin\Repositories.pdb
 C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Biblioteka\bin\Models.pdb
 C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Biblioteka\bin\Dapper.xml
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Biblioteka\bin\NLog.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Biblioteka\bin\NLog.xml
