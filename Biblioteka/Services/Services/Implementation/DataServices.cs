@@ -17,7 +17,7 @@ namespace Service.Services.Implementation
     public class DataServices : IDataService
     {
         private IRepository repo;
-        private string categoryName;
+        private string categoryName = String.Empty;
         public string CategoryName { get; set; }
 
         public DataServices(IRepository e)

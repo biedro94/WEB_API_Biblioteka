@@ -13,7 +13,12 @@ namespace Biblioteka.Controllers
         // GET: api/BibliotekaHome
         public List<string> Get()
         {
-            return DataServiceResolver.Get().GetListOfCategoriesServices();
+            List<string> lista = DataServiceResolver.Get().GetListOfCategoriesServices();
+            if (DataServiceResolver.Get().CategoryName == String.Empty)
+            {
+                DataServiceResolver.Get().CategoryName = lista.FirstOrDefault<string>();
+            }
+            return lista;
         }
 
         // GET: api/BibliotekaHome/5

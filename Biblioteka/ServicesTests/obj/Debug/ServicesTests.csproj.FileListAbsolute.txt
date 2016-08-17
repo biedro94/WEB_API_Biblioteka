@@ -26,3 +26,17 @@ C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Service
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\ServicesTests\obj\Debug\ServicesTests.csprojResolveAssemblyReference.cache
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\ServicesTests\obj\Debug\ServicesTests.dll
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\ServicesTests\obj\Debug\ServicesTests.pdb
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\ServicesTests.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\ServicesTests.pdb
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Services.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Models.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Repositories.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Dapper.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Services.pdb
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Models.pdb
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Repositories.pdb
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\bin\Debug\Dapper.xml
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\obj\Debug\ServicesTests.csprojResolveAssemblyReference.cache
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\obj\Debug\ServicesTests.dll
+C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\ServicesTests\obj\Debug\ServicesTests.pdb

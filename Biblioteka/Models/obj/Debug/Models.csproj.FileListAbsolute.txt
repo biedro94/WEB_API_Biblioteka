@@ -10,7 +10,6 @@ C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Bibliote
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\Biblioteka\Biblioteka-Bogdan\Biblioteka-Bogdan\Biblioteka\Models\obj\Debug\Models.pdb
 C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Models\bin\Debug\Models.dll
 C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Models\bin\Debug\Models.pdb
-C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Models\obj\Debug\Models.dll
 C:\Users\damian.biedrzycki\Documents\GitHub\WEB_API_Biblioteka\Biblioteka\Models\obj\Debug\Models.pdb
 C:\Users\Bogdan.Kosmala\Desktop\Biblioteka\WEB_API_Biblioteka\Biblioteka\Models\bin\Debug\Models.dll
