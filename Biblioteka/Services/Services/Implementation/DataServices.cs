@@ -17,6 +17,8 @@ namespace Service.Services.Implementation
     public class DataServices : IDataService
     {
         private IRepository repo;
+        private string categoryName;
+        public string CategoryName { get; set; }
 
         public DataServices(IRepository e)
         {
@@ -25,6 +27,10 @@ namespace Service.Services.Implementation
         public List<string> GetListOfCategoriesServices()
         {
             return repo.GetListOfCategories();
+        }
+        public List<Pozycja> GetListPositionsForCategoriesServices()
+        {
+            return repo.GetListPositionsForCategories(categoryName);
         }
 
     }
