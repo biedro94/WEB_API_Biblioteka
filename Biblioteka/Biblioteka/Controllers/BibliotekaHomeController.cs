@@ -23,9 +23,10 @@ namespace Biblioteka.Controllers
         }
 
         // POST: api/BibliotekaHome
+        [HttpPost]
         public void Post([FromBody]string value)
         {
-
+            DataServiceResolver.Get().CategoryName = value;
         }
 
         // PUT: api/BibliotekaHome/5
