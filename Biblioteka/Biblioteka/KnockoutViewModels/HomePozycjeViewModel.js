@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+﻿/*$(document).ready(function () {
     ko.applyBindings(new PozycjeViewModel());
 });
 
@@ -9,4 +9,4 @@ function PozycjeViewModel() {
     $.getJSON(baseUri, self.pozycje);
 
 
-}
+}*/
