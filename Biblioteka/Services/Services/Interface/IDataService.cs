@@ -9,9 +9,9 @@ namespace Service.Services.Interface
 {
     public interface IDataService
 {
-        string CategoryName { get; set; }
+
         List<string> GetListOfCategoriesServices();
-        List<Pozycja> GetListPositionsForCategoriesServices();
+        List<Pozycja> GetListPositionsForCategoriesServices(string categoryName);
 
     }
 }

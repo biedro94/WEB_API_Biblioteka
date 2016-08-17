@@ -14,7 +14,8 @@ namespace Biblioteka.Controllers
         // GET: api/HomePozycje
         public IEnumerable<Pozycja> Get()
         {
-            return DataServiceResolver.Get().GetListPositionsForCategoriesServices();
+            return null;
+            //return DataServiceResolver.Get().GetListPositionsForCategoriesServices();
         }
 
         // GET: api/HomePozycje/5

@@ -6,9 +6,9 @@
 <div class="row">
     <div class="col-md-3">
         <div data-bind="foreach: category">
-            <p class="opcja" data-bind="text: $data"></p>
+            <p><a href="#" class="opcja" data-bind="text: $data, click: function() {$root.Save($data)}"></a></p>
         </div>
-        <a id="butt" data-bind="click: Save">buttonek</a>
+
     </div>
    
     <div class="col-md-9">

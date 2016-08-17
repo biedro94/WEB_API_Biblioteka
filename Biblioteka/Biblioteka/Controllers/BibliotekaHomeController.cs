@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Resolver;
+using Models;
 
 namespace Biblioteka.Controllers
 {
@@ -13,12 +14,7 @@ namespace Biblioteka.Controllers
         // GET: api/BibliotekaHome
         public List<string> Get()
         {
-            List<string> lista = DataServiceResolver.Get().GetListOfCategoriesServices();
-            if (DataServiceResolver.Get().CategoryName == String.Empty)
-            {
-                DataServiceResolver.Get().CategoryName = lista.FirstOrDefault<string>();
-            }
-            return lista;
+            return DataServiceResolver.Get().GetListOfCategoriesServices();
         }
 
         // GET: api/BibliotekaHome/5
@@ -28,10 +24,11 @@ namespace Biblioteka.Controllers
         }
 
         // POST: api/BibliotekaHome
-        [HttpPost]
-        public void Post([FromBody]string value)
+        [HttpGet]
+        [Route("api/category/{value}/get")]
+        public List<Pozycja> GetSmthBy([FromUri]string value)
         {
-            DataServiceResolver.Get().CategoryName = value;
+            return DataServiceResolver.Get().GetListPositionsForCategoriesServices(value);
         }
 
         // PUT: api/BibliotekaHome/5

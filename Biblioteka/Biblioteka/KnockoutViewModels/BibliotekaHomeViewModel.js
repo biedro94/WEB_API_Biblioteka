@@ -5,34 +5,26 @@
 function CategoryNamesViewModel() {
     var self = this;
     var baseUri = "http://localhost:53566/api/BibliotekaHome";
-    var getPozycjeUri = "http://localhost:53566/api/HomePozycje";
+    var getPozycjeUri = "http://localhost:53566/api/category/";
     self.category = ko.observableArray();
     self.pozycje = ko.observableArray();
 
     $.getJSON(baseUri, self.category);
-
-    self.SendCategoryName = function () {
-        var data = JSON.stringify(
-            {
-                first: self.category
-            });
-        $.post("api/BibliotekaHome", data);
-    };
     
-    self.Save = function (){        
-        document.getElementById("butt").addEventListener('click', fn);
-        function fn() {
-            var jsonData = ko.toJSON(this.innerHTML);
-            $.post(baseUri, { value: jsonData }, function () { alert("UDALO SIE"); });
-            //alert(this.innerHTML);
-        }
-        
-    }
-    
-    $.getJSON(getPozycjeUri, function (data) {
+  /*  $.getJSON(getPozycjeUri, function (data) {
         var a = data.map(x => new Pozycja(x))
         self.pozycje(a);
-    });
+    */
+
+    self.Save = (text) => {
+        var obj = { value: text }
+        var url = "api/category/" + text + "/get";
+        $.getJSON(url, function (data) {
+            var a = data.map(x => new Pozycja(x))
+            self.pozycje(a);
+        });
+    };
+
   };
 
 
