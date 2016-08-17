@@ -23,6 +23,7 @@ namespace Service.Services.Implementation
         public DataServices(IRepository e)
         {
             this.repo = e;
+            categoryName = "biografie";
         }
         public List<string> GetListOfCategoriesServices()
         {
