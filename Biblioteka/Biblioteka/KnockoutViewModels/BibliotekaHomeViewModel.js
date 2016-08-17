@@ -22,8 +22,8 @@ function CategoryNamesViewModel() {
     self.Save = function (){        
         document.getElementById("butt").addEventListener('click', fn);
         function fn() {
-            var jsonData = ko.toJSON(this.innerHTML);
-            $.post(baseUri, { value: jsonData }, function () { alert("UDALO SIE"); });
+            //var jsonData = ko.toJSON(this.innerHTML);
+            $.post(baseUri, { value: this.innerHTML }, function () { alert("UDALO SIE"); });
             //alert(this.innerHTML);
         }
         
