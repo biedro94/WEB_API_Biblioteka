@@ -1,40 +1,39 @@
-﻿using System;
+﻿using Models;
+using Resolver;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Resolver;
 
 namespace Biblioteka.Controllers
 {
-    public class BibliotekaHomeController : ApiController
+    public class HomePozycjeController : ApiController
     {
-
-        // GET: api/BibliotekaHome
-        public List<string> Get()
+        // GET: api/HomePozycje
+        public IEnumerable<Pozycja> Get()
         {
-            return DataServiceResolver.Get().GetListOfCategoriesServices();
+            return DataServiceResolver.Get().GetListPositionsForCategoriesServices();
         }
 
-        // GET: api/BibliotekaHome/5
+        // GET: api/HomePozycje/5
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST: api/BibliotekaHome
+        // POST: api/HomePozycje
         public void Post([FromBody]string value)
         {
-            DataServiceResolver.Get().
         }
 
-        // PUT: api/BibliotekaHome/5
+        // PUT: api/HomePozycje/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/BibliotekaHome/5
+        // DELETE: api/HomePozycje/5
         public void Delete(int id)
         {
         }
