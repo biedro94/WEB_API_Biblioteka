@@ -96,3 +96,7 @@ ul li:hover{
     padding:0 !important;
     margin-right:50px;
 }
+
+.text{
+    vertical-align:middle;
+}
