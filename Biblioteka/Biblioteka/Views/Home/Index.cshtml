@@ -1,30 +1,30 @@
-﻿<script src="../../Scripts/jquery-1.10.2.js"></script>
-<script src="../../Scripts/knockout-3.4.0.js"></script>
-<script src="../../KnockoutViewModels/BibliotekaHomeViewModel.js"></script>
+﻿<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/knockout-3.4.0.js"></script>
+<script src="~/KnockoutViewModels/BibliotekaHomeViewModel.js"></script>
+<script src="~/Scripts/simplegrid.js"></script>
 
 
 <div class="row">
     <div class="col-md-3">
         <h2 class="kategoria">Kategorie</h2>
-        <div data-bind="foreach: category">
-            <p><a href="#" class="opcja" data-bind="text: $data, click: function() {$root.Save($data)}"></a></p>
+        <ul class="cat" data-bind="foreach: category">
+            <li><a href="#" class="opcja" data-bind="text: $data, click: function() {$root.Save($data)}"></a></li>
+        </ul>
+    </div>
+   <div class="col-md-9">
+       <div class="row">
+            <div class="col-md-6">
+                dssdhgsdg
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Wprowadz frazę">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Szukaj</button>
+                    </span>
+                </div>
+            </div>
         </div>
-
-    </div>
-    <div class="col-md-3">
-        dssdhgsdg
-    </div>
-    <div class="col-md-3 form-group">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Wprowadz frazę">
-            <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Szukaj</button>
-            </span>
-        </div>
-    </div>
-   
-    <div class="col-md-9 col-md-offset-3">       
-        
         <div class="table-responsive">
             <table class="table table-striped">
                 <thead>
@@ -33,7 +33,6 @@
                         <th>Autor</th>
                         <th>Wydawca</th>
                         <th>Rok wydania</th>
-                        <th>Dostępność</th>
                     </tr>
                 </thead>
                 <tbody data-bind="foreach: pozycje">
@@ -45,11 +44,10 @@
                     </tr>
                 </tbody>
             </table>
-        </div> 
-
-
+            <span>Strona:</span>
+            <div data-bind="simpleGrid: gridViewModel"> </div>           
+        </div>
     </div>
-
 </div>
 
 
