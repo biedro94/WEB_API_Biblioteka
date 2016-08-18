@@ -13,5 +13,7 @@ namespace Service.Services.Interface
         List<string> GetListOfCategoriesServices();
         List<Pozycja> GetListPositionsForCategoriesServices(string categoryName);
 
+        List<Pozycja> SearchPositionsByTitleServices(string text);
+
     }
 }

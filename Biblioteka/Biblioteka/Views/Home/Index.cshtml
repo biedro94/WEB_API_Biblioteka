@@ -18,9 +18,9 @@
            </div>
             <div class="col-md-4 form-group">
                 <div class="input-group">                    
-                    <input type="text" class="form-control" placeholder="Wprowadź tytuł">
+                    <input type="text" class="form-control" data-bind="value: searchPattern" placeholder="Wprowadź tytuł">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Szukaj</button>
+                        <button class="btn btn-default" type="button" data-bind="click: function() {$root.search()}">Szukaj</button>
                     </span>
                 </div>
             </div>

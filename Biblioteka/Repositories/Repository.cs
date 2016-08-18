@@ -15,6 +15,11 @@ namespace Repositories
             return GetListOfString("Biblioteka_Get_Category_Names", null);
         }
 
+        public List<Pozycja> SearchPositionsByTitle(string text)
+        {
+            return GetCollection<Pozycja>("Biblioteka_Search_Poz_By_Title", new { s = text });
+        }
+
         public List<Pozycja> GetListPositionsForCategories(string nazwaKategorii)
         {
             return GetCollection<Pozycja>("Biblioteka_Get_Pozycje_W_Kategorii", new { s = nazwaKategorii });

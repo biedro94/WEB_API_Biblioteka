@@ -12,6 +12,8 @@ namespace Repositories.Interface
 
         List<string> GetListOfCategories();
 
+        List<Pozycja> SearchPositionsByTitle(string text);
+
         List<Pozycja> GetListPositionsForCategories(string nazwaKategorii);
 
         bool GetAvailabilityForPosition(int idPozycji);

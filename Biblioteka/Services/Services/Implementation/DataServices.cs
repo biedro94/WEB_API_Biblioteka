@@ -30,6 +30,9 @@ namespace Service.Services.Implementation
         {
             return repo.GetListPositionsForCategories(categoryName);
         }
-
+        public List<Pozycja> SearchPositionsByTitleServices(string text)
+        {
+            return repo.SearchPositionsByTitle(text);
+        }
     }
 }
