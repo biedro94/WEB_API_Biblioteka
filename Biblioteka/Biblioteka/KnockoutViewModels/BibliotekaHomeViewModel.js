@@ -1,47 +1,43 @@
 ﻿$(document).ready(function () {
-    ko.applyBindings(new CategoryNamesViewModel());
+    ko.applyBindings(new CategoryVm());
 });
 
-function CategoryNamesViewModel() {
-    var self = this;
-    var baseUri = "http://localhost:53566/api/BibliotekaHome";
-    var getPozycjeUri = "http://localhost:53566/api/category/";
-    self.category = ko.observableArray();
-    self.defaultCategory = ko.observable(0);
-    self.pozycje = ko.observableArray();
+const urls = {
+    baseUri: "http://localhost:53566/api/BibliotekaHome",
+    getPozycjeUri: "http://localhost:53566/api/category/"
+}
 
-    $.getJSON(baseUri, self.category).then(fulfilled => {
-        self.Save(self.category()[0]);
-    }, rejected => {
+class CategoryVm {
+    constructor() {
 
-    });
+        this.categories = ko.observableArray([]);
+        this.defaultCategory = ko.observable(0);
+        this.pozycje = ko.observableArray([]);
 
-    self.Save = (text) => {
-        var url = "api/category/" + text + "/get";
-        $.getJSON(url, function (data) {
-            var a = data.map(x => new Pozycja(x))
-            self.pozycje(a);
+        $.getJSON(urls.baseUri, this.categories).then(fulfilled => {
+            this.save(this.categories()[0]);
+        }, rejected => {
+
         });
-    };
+    }
 
-
-  };
-
-
-function Pozycja(poz) {
-    var self = this;
-
-    // observable are update elements upon changes, also update on element data changes [two way binding]
-    self.IdPoz = ko.observable(poz.Id_poz);
-    self.Tytul = ko.observable(poz.Tytul);
-    self.Autor = ko.observable(poz.Autor);
-    self.Opis = ko.observable(poz.Opis);
-    self.Jezyk = ko.observable(poz.Jezyk);
-    self.Wydawca = ko.observable(poz.Wydawca);
-    self.RokWydania = ko.observable(poz.Rok_wydania);
-    self.IdKat = ko.observable(poz.Id_kategorii);
-
-
-};
-
+    save(text){
+        var url = "api/category/" + text + "/get";
+        $.getJSON(url, (data) => {
+            const a = data.map(x => {
+                return {
+                    IdPoz: ko.observable(x.Id_poz),
+                    Tytul: ko.observable(x.Tytul),
+                    Autor: ko.observable(x.Autor),
+                    Opis: ko.observable(x.Opis),
+                    Jezyk: ko.observable(x.Jezyk),
+                    Wydawca: ko.observable(x.Wydawca),
+                    RokWydania: ko.observable(x.Rok_wydania),
+                    IdKat: ko.observable(x.Id_kategorii),
+                }
+            });
+            this.pozycje(a);
+        });
+    }
+}
 

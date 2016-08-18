@@ -6,8 +6,8 @@
 <div class="row">
     <div class="col-md-3">
         <h2 class="kategoria">Kategorie</h2>
-        <div data-bind="foreach: category">
-            <p><a href="#" class="opcja" data-bind="text: $data, click: function() {$root.Save($data)}"></a></p>
+        <div data-bind="foreach: categories">
+            <p><a href="#" class="opcja" data-bind="text: $data, click: function() {$root.save($data)}"></a></p>
         </div>
 
     </div>
