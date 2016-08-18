@@ -10,49 +10,20 @@ function CategoryNamesViewModel() {
     self.defaultCategory = ko.observable(0);
     self.pozycje = ko.observableArray();
 
-
     $.getJSON(baseUri, self.category).then(fulfilled => {
         self.Save(self.category()[0]);
     }, rejected => {
 
     });
 
-
     self.Save = (text) => {
         var url = "api/category/" + text + "/get";
         $.getJSON(url, function (data) {
             var a = data.map(x => new Pozycja(x))
             self.pozycje(a);
-
         });
     };
 
-    /*self.Save = (text) => {
-        self.defaultCategory(text);
-    };*/
-
-    /*self.PozycjeReload = (text) => {
-        //alert(self.defaultCategory());
-        var url = "api/category/" + text + "/get";
-        $.getJSON(url, function (data) {
-            var a = data.map(x => new Pozycja(x))
-            self.pozycje(a);
-            
-        });
-    };*/
-    
-   /* self.test = ko.computed(function () {
-        
-        if (self.defaultCategory() == 0) {
-            self.PozycjeReload(self.category()[0]);
-            return 0;
-        }
-        else {
-            self.PozycjeReload(self.defaultCategory());
-            return 1;
-
-        }
-    });*/
 
   };
 
@@ -73,8 +44,4 @@ function Pozycja(poz) {
 
 };
 
-    /*self.SendCategoryName = function(){
-        var jsonData = ko.toJSON(self);
-        ko.utils.postJson(baseUri, {value: jsonData});
-    };*/
 
