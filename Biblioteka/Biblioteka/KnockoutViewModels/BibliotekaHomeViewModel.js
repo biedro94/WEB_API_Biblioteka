@@ -3,8 +3,7 @@
 });
 
 const urls = {
-    baseUri: "http://localhost:53566/api/BibliotekaHome",
-    getPozycjeUri: "http://localhost:53566/api/category/"
+    baseUri: "http://localhost:53566/api/BibliotekaHome"
 }
 
 class CategoryVm {
@@ -20,7 +19,6 @@ class CategoryVm {
 
         });
     }
-
     save(text){
         var url = "api/category/" + text + "/get";
         $.getJSON(url, (data) => {
@@ -39,5 +37,7 @@ class CategoryVm {
             this.pozycje(a);
         });
     }
+
+
 }
 

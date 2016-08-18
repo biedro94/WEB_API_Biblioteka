@@ -7,8 +7,8 @@
 <div class="row">
     <div class="col-md-3">
         <h2 class="kategoria">Kategorie</h2>
-        <ul class="cat" data-bind="foreach: category">
-            <li><a href="#" class="opcja" data-bind="text: $data, click: function() {$root.Save($data)}"></a></li>
+        <ul class="cat" data-bind="foreach: categories">
+            <li><a href="#" class="opcja" data-bind="text: $data, click: function() {$root.save($data)}"></a></li>
         </ul>
     </div>
    <div class="col-md-9">
@@ -41,11 +41,10 @@
                         <td data-bind="text: Autor"></td>
                         <td data-bind="text: Wydawca"></td>
                         <td data-bind="text: RokWydania"></td>
+                        <td><button type="button" class="btn btn-info btn-group-xs">Szczegóły</button></td>
                     </tr>
                 </tbody>
-            </table>
-            <span>Strona:</span>
-            <div data-bind="simpleGrid: gridViewModel"> </div>           
+            </table>                               
         </div>
     </div>
 </div>
