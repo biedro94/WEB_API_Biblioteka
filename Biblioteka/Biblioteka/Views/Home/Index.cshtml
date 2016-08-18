@@ -42,7 +42,17 @@
                         <td data-bind="text: Autor"></td>
                         <td data-bind="text: Wydawca"></td>
                         <td data-bind="text: RokWydania"></td>
-                        <td><button type="button" class="btn btn-info btn-group-xs">Szczegóły</button></td>
+                        <td>
+                            <form data-bind="submit: getTweets">
+                                <button type="submit" class="btn btn-info btn-group-xs" data-bind="click: function (){ $root.details(IdPoz)},">Szczegóły</button>
+                            </form>
+                            <div data-bind="with: resultData">                                
+                                <ol data-bind="foreach: detail">
+                                    <li data-bind="text: text"></li>
+                                </ol>
+                                <button data-bind="click: $root.clearResults">Clear tweets</button>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>                               

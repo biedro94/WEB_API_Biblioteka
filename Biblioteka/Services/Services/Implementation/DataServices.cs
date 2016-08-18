@@ -31,5 +31,10 @@ namespace Service.Services.Implementation
             return repo.GetListPositionsForCategories(categoryName);
         }
 
+        public Pozycja GetDetailsAboutPositionServices(int idPozycji)
+        {
+            return repo.GetDetailsPosition(idPozycji);
+        }
+
     }
 }

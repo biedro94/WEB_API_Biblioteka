@@ -16,7 +16,7 @@ namespace Repositories.Interface
 
         bool GetAvailabilityForPosition(int idPozycji);
 
-        List<Pozycja> GetListOfDetailsPosition(int idPozycji);
+        Pozycja GetDetailsPosition(int idPozycji);
 
         DMLResult ReturnBook(int idPozycji, int idCzytelnika);
 
