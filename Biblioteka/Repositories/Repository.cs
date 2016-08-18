@@ -30,9 +30,9 @@ namespace Repositories
             return GetScalar<bool>("Biblioteka_Get_Dostepnosc_Pozycji", new { id = idPozycji });
         }
 
-        public List<Pozycja> GetListOfDetailsPosition(int idPozycji)
+        public Pozycja GetDetailsPosition(int idPozycji)
         {
-            return GetCollection<Pozycja>("Biblioteka_Get_Szczegoly_O_Pozycji", new { idPoz = idPozycji });
+            return GetObject<Pozycja>("Biblioteka_Get_Szczegoly_O_Pozycji", new { idPoz = idPozycji });
         }
 
         public DMLResult ReturnBook(int idPozycji, int idCzytelnika)

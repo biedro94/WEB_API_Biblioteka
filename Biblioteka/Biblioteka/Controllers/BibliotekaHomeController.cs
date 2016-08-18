@@ -31,12 +31,19 @@ namespace Biblioteka.Controllers
             return DataServiceResolver.Get().GetListPositionsForCategoriesServices(value);
         }
 
-        // POST: api/BibliotekaHome
+
         [HttpGet]
         [Route("api/search/{value}/get")]
         public List<Pozycja> Search([FromUri]string value)
         {
             return DataServiceResolver.Get().SearchPositionsByTitleServices(value);
+	}
+
+        [HttpGet]
+        [Route("api/position/{value}/get")]
+        public Pozycja GetIdDetails([FromUri]int idPozycji)
+        {
+            return DataServiceResolver.Get().GetDetailsAboutPositionServices(idPozycji);
         }
 
         // PUT: api/BibliotekaHome/5
