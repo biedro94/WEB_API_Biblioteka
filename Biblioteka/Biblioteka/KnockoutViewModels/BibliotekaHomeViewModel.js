@@ -10,11 +10,13 @@ function CategoryNamesViewModel() {
     self.defaultCategory = ko.observable(0);
     self.pozycje = ko.observableArray();
 
+
     $.getJSON(baseUri, self.category).then(fulfilled => {
         self.Save(self.category()[0]);
     }, rejected => {
 
     });
+
 
     self.Save = (text) => {
         var url = "api/category/" + text + "/get";
