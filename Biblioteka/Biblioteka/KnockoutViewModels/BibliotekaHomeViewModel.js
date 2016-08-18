@@ -37,7 +37,5 @@ class CategoryVm {
             this.pozycje(a);
         });
     }
-
-
 }
 
