@@ -65,10 +65,10 @@ table {
 .liveExample { height:20em; overflow:auto } /* Mobile Safari reflows pages slowly, so fix the height to avoid the need for reflows */
 
 ul li {
-    background:white;
     padding:10px;
-    transition-duration:1.5s;
+    transition-duration:0.5s;
     border-bottom:1px dashed black;
+    color: #4b4c4c;
 }
 
 ul{
@@ -76,7 +76,23 @@ ul{
 }
 
 ul li:hover{
-    background:black;
+    background:rgba(255,255,255,0.6);
+    transition-duration:0.5s;
+}
+
+.opcja{
+    color:#4b4c4c;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#lista{
     color:white !important;
-    transition-duration:1.5s;
+}
+
+.cat{
+    position:relative;
+    left:0px;
+    padding:0 !important;
+    margin-right:50px;
 }

@@ -333,10 +333,11 @@ textarea {
   background-image: none;
 }
 
-a {
-  color: darkslategray;
+/*a {
+  color: #4b4c4c;
+  font-weight:bold;
   text-decoration: none;
-}
+}*/
 
 /*a:hover,
 a:focus {
