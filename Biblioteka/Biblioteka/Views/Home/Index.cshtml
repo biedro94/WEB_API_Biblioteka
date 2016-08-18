@@ -43,19 +43,26 @@
                         <td data-bind="text: Wydawca"></td>
                         <td data-bind="text: RokWydania"></td>
                         <td>
-                            <form data-bind="submit: getTweets">
-                                <button type="submit" class="btn btn-info btn-group-xs" data-bind="click: function (){ $root.details(IdPoz)},">Szczegóły</button>
-                            </form>
-                            <div data-bind="with: resultData">                                
-                                <ol data-bind="foreach: detail">
-                                    <li data-bind="text: text"></li>
-                                </ol>
-                                <button data-bind="click: $root.clearResults">Clear tweets</button>
-                            </div>
+                        
+                                                
+                            <button type="button" class="btn btn-info btn-group-xs" data-bind="click: function (){ $root.getPozDetails()}">Szczegóły</button>
+                            
+                            <div data-bind="with: $root.resultData">
+                                <h3>Identyfikator: <span data-bind="text: $parent.IdPoz"> </span></h3>
+                                <h3>Opis: <span data-bind="text: $parent.Opis"> </span></h3>
+                                <h3>Język: <span data-bind="text: $parent.Jezyk"> </span></h3>
+
+                                <button type="button" class="btn btn-info btn-group-xs" data-bind="click: function (){ $root.clearDetails()}">Ukryj</button>
+                            </div>                             
+                                
+                            
                         </td>
                     </tr>
                 </tbody>
-            </table>                               
+            </table> 
+            
+ 
+                       
         </div>
     </div>
 </div>

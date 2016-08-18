@@ -12,6 +12,8 @@ class CategoryVm {
         this.categories = ko.observableArray([]);
         this.pozycje = ko.observableArray([]);
         this.searchPattern = ko.observable(0);
+        this.resultData = ko.observable();
+        this.idPosition = ko.observable(10000);
 
         $.getJSON(urls.baseUri, this.categories).then(fulfilled => {
             this.save(this.categories()[0]);
@@ -56,5 +58,25 @@ class CategoryVm {
             this.pozycje(a);
         });
     };
-}
+    
+    
+    details(id) {
+        var url = "api/position/" + id + "/get";
+        $.getJSON(url, this.resultData);
+        
+    };
 
+    getPozDetails() {
+        this.pozycje.
+         this.resultData({
+             IdPoz: 1,
+             Tytul: 2,
+         });
+     };
+ 
+     clearDetails() {
+         this.resultData(undefined);
+     };
+
+
+}

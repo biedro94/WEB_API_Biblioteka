@@ -41,9 +41,9 @@ namespace Biblioteka.Controllers
 
         [HttpGet]
         [Route("api/position/{value}/get")]
-        public Pozycja GetIdDetails([FromUri]int idPozycji)
+        public Pozycja GetIdDetails([FromUri]int value)
         {
-            return DataServiceResolver.Get().GetDetailsAboutPositionServices(idPozycji);
+            return DataServiceResolver.Get().GetDetailsAboutPositionServices(value);
         }
 
         // PUT: api/BibliotekaHome/5
