@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <div>Hello! Login please.</div>
+    <div><form data-bind="submit:login">
+        <input type="text" name="login"/>
+        <input type="password" name="password" />
+        <button type="submit">Login</button>
+        </form></div>
+</div>
+
+@section scripts{
+<script language="javascript">
+
+
+        $(document).ready(function () {
+            ko.applyBindings(new UsersViewModel());
+        });
+
+        function UsersViewModel() {
+
+            var baseUri = "api/Login";
+            this.login = function (formElement) {
+
+                $.post(baseUri, $(formElement).serialize(), null, "json"), $(formElement).each(function () {
+                    this.reset();
+                });
+            }
+
+
+        }
+
+
+</script>
+    
+    }
