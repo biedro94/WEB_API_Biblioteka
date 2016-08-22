@@ -58,22 +58,27 @@ class CategoryVm {
             this.pozycje(a);
         });
     };
-    
-    
-    details(id) {
+
+
+   /* details(id) {
         var url = "api/position/" + id + "/get";
         $.getJSON(url, this.resultData);
-        
-    };
+    };*/
 
     getPozDetails() {
-         this.resultData({
-         });
+        this.resultData({
+            Dostepnosc : ko.observable(Dostepnosc)
+        });
     };
 
-     clearDetails() {
-         this.resultData(undefined);
-     };
+    clearDetails() {
+        this.resultData(undefined);
+    };
+
+    /*availability (id){
+        var url = "api/availability/" + id + "/get";
+        $.getJSON(url, this.resultData);
+    };*/
 
 
 }

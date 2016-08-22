@@ -39,5 +39,9 @@ namespace Service.Services.Implementation
             return repo.GetDetailsPosition(idPozycji);
         }
 
+        public bool GetAvailabilityForPositionsServices(int idPozycji)
+        {
+            return repo.GetAvailabilityForPosition(idPozycji);
+        }
     }
 }

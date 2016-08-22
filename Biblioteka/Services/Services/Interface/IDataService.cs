@@ -18,5 +18,6 @@ namespace Service.Services.Interface
 
         List<Pozycja> SearchPositionsByTitleServices(string text);
 
+        bool GetAvailabilityForPositionsServices(int idPozycji);
     }
 }

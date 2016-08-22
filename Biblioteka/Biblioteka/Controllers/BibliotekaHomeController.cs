@@ -46,6 +46,14 @@ namespace Biblioteka.Controllers
         {
             return DataServiceResolver.Get().GetDetailsAboutPositionServices(value);
         }
+
+        [HttpGet]
+        [Route("api/availability/{value}/get")]
+        public bool GetAvailabilityForPositions([FromUri]int value)
+        {
+            return DataServiceResolver.Get().GetAvailabilityForPositionsServices(value);
+        }
+
         /* Do usuniecia 
         // PUT: api/BibliotekaHome/5
         public void Put(int id, [FromBody]string value)
