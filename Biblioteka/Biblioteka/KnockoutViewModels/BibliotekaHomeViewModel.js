@@ -15,36 +15,23 @@ class CategoryVm {
         this.resultData = ko.observable();
         this.idPosition = ko.observable(10000);
 
-
         $.getJSON(urls.baseUri, this.categories).then(fulfilled => {
             this.save(this.categories()[0]);
-        }, rejected => {
+        }, rejected => {});
+    };
 
-        });
-    }
     save(text) {
         var url = "api/category/" + text + "/get";        
-        $.getJSON(url, (data) => {
-            const a = data.map(x => {
-                return {
-                    IdPoz: ko.observable(x.Id_poz),
-                    Tytul: ko.observable(x.Tytul),
-                    Autor: ko.observable(x.Autor),
-                    Opis: ko.observable(x.Opis),
-                    Jezyk: ko.observable(x.Jezyk),
-                    Wydawca: ko.observable(x.Wydawca),
-                    RokWydania: ko.observable(x.Rok_wydania),
-                    IdKat: ko.observable(x.Id_kategorii),
-                    Flaga: ko.observable(undefined),
-                    Dostepnosc: ko.observable()
-                }
-            });
-            this.pozycje(a);
-        });
+        this.updatePozycje(url);
     };
+
     search() {
         /*wyszukiwanie jest prymitywne - jedynie na potrzeby prezentacji działania*/
         var url = "api/search/" + this.searchPattern() + "/get";
+        this.updatePozycje(url);
+    };
+
+    updatePozycje(url) {
         $.getJSON(url, (data) => {
             const a = data.map(x => {
                 return {
@@ -63,12 +50,6 @@ class CategoryVm {
             this.pozycje(a);
         });
     };
-
-    /*   details(id) {
-           var url = "api/position/" + id + "/get";
-           $.getJSON(url, this.resultData);
-           
-       };*/
 
     getPozDetails(id) {
         var urli = "api/availability/" + id() + "/get";
@@ -88,10 +69,7 @@ class CategoryVm {
                         document.getElementById("dostepnosc").style.color = "red";
                     };
 
-                }, rejected => {
-
-                });
-                
+                }, rejected => {});          
             };
         };
     };
