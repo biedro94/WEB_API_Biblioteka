@@ -62,8 +62,7 @@ class CategoryVm {
             this.pozycje(a);
         });
     };
-    
-    
+
     /*   details(id) {
            var url = "api/position/" + id + "/get";
            $.getJSON(url, this.resultData);
@@ -85,6 +84,7 @@ class CategoryVm {
             };
         };
     };
+
 
 
 }
