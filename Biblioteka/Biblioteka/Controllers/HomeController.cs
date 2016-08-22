@@ -14,5 +14,10 @@ namespace Biblioteka.Controllers
 
             return View();
         }
+        public ActionResult Login()
+        {
+            ViewBag.Title = "Login Page";
+            return View();
+        }
     }
 }

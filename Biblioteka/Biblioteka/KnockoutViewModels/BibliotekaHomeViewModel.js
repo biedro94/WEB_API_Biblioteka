@@ -35,8 +35,8 @@ class CategoryVm {
                     Wydawca: ko.observable(x.Wydawca),
                     RokWydania: ko.observable(x.Rok_wydania),
                     IdKat: ko.observable(x.Id_kategorii),
-                    Flaga: ko.observable(undefined),
-                    Dostepnosc: ko.observable()
+                    Flaga: ko.observable(undefined)/*,
+                    Dostepnosc: ko.observable()*/
                 }
             });
             this.pozycje(a);
@@ -56,8 +56,8 @@ class CategoryVm {
                     Wydawca: ko.observable(x.Wydawca),
                     RokWydania: ko.observable(x.Rok_wydania),
                     IdKat: ko.observable(x.Id_kategorii),
-                    Flaga: ko.observable(undefined),
-                    Dostepnosc: ko.observable()
+                    Flaga: ko.observable(undefined)/*,
+                    Dostepnosc: ko.observable()*/
                 }
             });
             this.pozycje(a);
@@ -103,7 +103,4 @@ class CategoryVm {
             };
         };
     };
-
-
-
 }
