@@ -34,6 +34,8 @@ class CategoryVm {
                     Wydawca: ko.observable(x.Wydawca),
                     RokWydania: ko.observable(x.Rok_wydania),
                     IdKat: ko.observable(x.Id_kategorii),
+                    Flaga: ko.observable(undefined),
+                    Dostepnosc: ko.observable()
                 }
             });
             this.pozycje(a);
@@ -53,6 +55,8 @@ class CategoryVm {
                     Wydawca: ko.observable(x.Wydawca),
                     RokWydania: ko.observable(x.Rok_wydania),
                     IdKat: ko.observable(x.Id_kategorii),
+                    Flaga: ko.observable(undefined),
+                    Dostepnosc: ko.observable()
                 }
             });
             this.pozycje(a);
@@ -60,20 +64,27 @@ class CategoryVm {
     };
     
     
-    details(id) {
-        var url = "api/position/" + id + "/get";
-        $.getJSON(url, this.resultData);
-        
+    /*   details(id) {
+           var url = "api/position/" + id + "/get";
+           $.getJSON(url, this.resultData);
+           
+       };*/
+
+    getPozDetails(id) {
+        for (let n = 0; n < this.pozycje().length; ++n) {
+            if (this.pozycje()[n].IdPoz == id) {
+                this.pozycje()[n].Flaga({});
+            };
+        };
     };
 
-    getPozDetails() {
-         this.resultData({
-         });
+    clearDetails(id) {
+        for (let n = 0; n < this.pozycje().length; ++n) {
+            if (this.pozycje()[n].IdPoz == id) {
+                this.pozycje()[n].Flaga(undefined);
+            };
+        };
     };
-
-     clearDetails() {
-         this.resultData(undefined);
-     };
 
 
 }
