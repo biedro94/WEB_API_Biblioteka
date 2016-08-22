@@ -51,7 +51,7 @@ namespace Biblioteka.Controllers
         [Route("api/availability/{value}/get")]
         public bool GetAvailabilityForPositions([FromUri]int value)
         {
-            return DataServiceResolver.Get().GetAvailabilityForPositionsServices(value);
+            return DataServiceResolver.Get().GetAvailabilityForPositionsServices(value);            
         }
 
         /* Do usuniecia 
