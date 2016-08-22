@@ -32,31 +32,25 @@
                     <tr>
                         <th>Tytuł</th>
                         <th>Autor</th>
-                        <th>Wydawca</th>
                         <th>Rok wydania</th>
                     </tr>
                 </thead>
                 <tbody data-bind="foreach: pozycje">
                     <tr>
                         <td data-bind="text: Tytul"></td>
-                        <td data-bind="text: Autor"></td>
-                        <td data-bind="text: Wydawca"></td>
+                        <td data-bind="text: Autor"></td>                        
                         <td data-bind="text: RokWydania"></td>
-                        <td>
-                        
-                                                
+                        <td>                                         
                             <button type="button" class="btn btn-info btn-group-xs" data-bind="click: function (){ $root.getPozDetails()}">Szczegóły</button>
-                            
                             <div data-bind="with: $root.resultData">
-                                <h3>Identyfikator: <span data-bind="text: $parent.IdPoz"> </span></h3>
-                                <h3>Opis: <span data-bind="text: $parent.Opis"> </span></h3>
-                                <h3>Język: <span data-bind="text: $parent.Jezyk"> </span></h3>
-
+                                <h4><strong>Tytuł:</strong> <span data-bind="text: $parent.Tytul"> </span></h4>
+                                <h4><strong>Autor:</strong> <span data-bind="text: $parent.Autor"> </span></h4>
+                                <h5>Wydawnictwo: <span data-bind="text: $parent.Wydawca"> </span></h5>
+                                <h5>Język: <span data-bind="text: $parent.Jezyk"> </span></h5>
+                                <h5>Opis:</h5><p data-bind="text: $parent.Opis"></p>
                                 <button type="button" class="btn btn-info btn-group-xs" data-bind="click: function (){ $root.clearDetails()}">Ukryj</button>
-                            </div>                             
-                                
-                            
-                        </td>
+                            </div>                                          
+                        </td>                        
                     </tr>
                 </tbody>
             </table> 

@@ -11,7 +11,7 @@ class CategoryVm {
 
         this.categories = ko.observableArray([]);
         this.pozycje = ko.observableArray([]);
-        this.searchPattern = ko.observable(0);
+        this.searchPattern = ko.observable();
         this.resultData = ko.observable();
         this.idPosition = ko.observable(10000);
 
@@ -67,13 +67,10 @@ class CategoryVm {
     };
 
     getPozDetails() {
-        this.pozycje.
          this.resultData({
-             IdPoz: 1,
-             Tytul: 2,
          });
-     };
- 
+    };
+
      clearDetails() {
          this.resultData(undefined);
      };
